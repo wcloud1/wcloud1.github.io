@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>不知名小站</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="/"/>
+  <updated>2021-01-28T09:06:41.104Z</updated>
+  <id>/</id>
+  
+  <author>
+    <name>白云</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="/2021/01/26/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>/2021/01/26/第一篇博客/</id>
+    <published>2021-01-26T13:50:53.000Z</published>
+    <updated>2021-01-28T09:06:41.104Z</updated>
+    
+    <summary type="html">
+    
+      绝对路径与相对路径的区别
+    
+    </summary>
+    
+      <category term="转载" scheme="/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="纪念" scheme="/tags/%E7%BA%AA%E5%BF%B5/"/>
+    
+      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+</feed>
