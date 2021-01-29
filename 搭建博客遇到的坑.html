@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">music | 不知名小站</title>
+  <title itemprop="name">不知名小站</title>
   
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -390,27 +390,32 @@
 
         <div class="pattern-center-blank"></div>
   
-    <div class="pattern-center ">
-      <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/music.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-      </div>
-      <header class="pattern-header ">
-        <h1 class="entry-title">
-        喜欢的音乐</h1>
-      </header>
-    </div>
-  
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      
-<meting-js server="netease" type="playlist" id="2731690811" mutex="true">
-</meting-js>
-
-<meting-js server="netease" type="playlist" id="419239189" mutex="true">
-</meting-js>
+      <p>&emsp;&emsp;我遇到到的问题有不少，主要的有两个，在网上找了不少资料才得以解决，在此分享给大家，可以让小白少走不少弯路，虽然我也只是个刚入门几天的小白｡ﾟ(ﾟ´Д｀)ﾟ</p>
+<h1 id="一、仓库地址设置"><a href="#一、仓库地址设置" class="headerlink" title="一、仓库地址设置"></a>一、仓库地址设置</h1><p>&emsp;&emsp;这个主要在config.yml中设置，位置在’deploy’这个地方，按照网上的教程，’type’后面填git，但要注意“冒号后面都要有空格”哦，不然编译会出错的。’repo’后面直接将仓库地址复制到这里即可。然后下面再加个代码：</p>
+<pre><code>branch: master
+</code></pre><p>上面代码中的’master’取决于你建的仓库的主分支是什么，如果是’main’，则将其该成’main’。</p>
+<h2 id="1-repo出现的问题"><a href="#1-repo出现的问题" class="headerlink" title="1.repo出现的问题"></a>1.repo出现的问题</h2><p>&emsp;&emsp;在推送的时候，出现can not arrive (你的仓库地址)之类的，出现这个问题是由于使用https格式的仓库地址，将其改为ssh地址即可。</p>
+<h2 id="2-branch出现的问题"><a href="#2-branch出现的问题" class="headerlink" title="2.branch出现的问题"></a>2.branch出现的问题</h2><p>&emsp;&emsp;在使用Sakura主题时，遇到了一个问题，我的仓库主分支为main，在’branch’处设置为main，不过编译信息里还是’master’，而且直接编译错误，可能还有什么地方要改吧，具体我也没找到。最简单的解决办法，就是将仓库更改主分支为’master’，然后’branch’后面也改为’master’即可。</p>
+<h1 id="二、成功推送到github但无法打开网页"><a href="#二、成功推送到github但无法打开网页" class="headerlink" title="二、成功推送到github但无法打开网页"></a>二、成功推送到github但无法打开网页</h1><p>&emsp;&emsp;我出现的问题是编译成功，但是打开相关的文件，内容都是空的，大小全是0kb，访问网页也不行，直接空白，这还是在我查看github的时候才发现的，毕竟文件大小全为0是不可能的。之前我以为是设置问题，但检查了很长时间没有发现什么问题。后来看到网上有位网友支招，可能是node版本太高的原因，可以试试降级。历史版本可以在官网找到，记得下载后缀为msi的，然后下载安装即可。编译生成的文件终于有了大小，也就意味着其中有内容了，然后推送到仓库，打开博客，一气呵成，成功。<br>&emsp;&emsp;node版本太高出现不兼容，很难让人想到。我也是在网上找了很久，才找到一两个提这个问题的，在此分享给大家。</p>
 
       <!-- .entry-content -->
       
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
       <div class="single-reward">
         <div class="reward-open">赏
           <div class="reward-main">
